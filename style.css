@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  top: 70px;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #16213e;
+  transition: all 0.4s ease;
+}
+
+header {
+  position: fixed;
+  font-weight: 700;
+  color: white;
+  font-size: 22px;
+  padding: 0 20px;
+  height: 70px;
+  width: 100%;
+  background: #293c70;
+  z-index: 5;
+}
+header h1 a {
+  position: absolute;
+  font-size: 25px;
+  top: 17px;
+  left: 80px;
+  color: white;
+}
+
+nav ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+  /* font-weight: 600; */
+  border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+  transition: 0.2s;
+}
+
+ul li:hover a {
+  background-color: #434f72;
+}
+
+nav ul a i {
+  margin-right: 15px;
+}
+
+#check {
+  display: none;
+}
+
+label #btn {
+  position: fixed;
+  cursor: pointer;
+  background-color: #293c70;
+  border-radius: 3px;
+}
+
+label #btn {
+  left: 20px;
+  top: 17px;
+  font-size: 25px;
+  color: white;
+  z-index: 1111;
+  padding: 6px 12px;
+  transition: all 0.4s ease;
+}
+
+#check:checked ~ nav {
+  left: 0;
+}
+
+footer {
+  position: absolute;
+  top: 840px;
+  left: 20px;
+}
+
+footer p {
+  color: white;
+  font-weight: 600;
+}
+footer p a {
+  color: #e94560;
+  font-style: italic;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/* main */
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  margin: 100px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+}
+
+/* container card */
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.cardImg a:hover {
+  cursor: pointer;
+}
+
+.card .cardImg {
+  transition: all 0.2s;
+}
+
+.card .cardImg:hover {
+  transform: translateY(-5px);
+}
+
+.card .cardImg img {
+  width: 20rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardImg {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.about {
+  border-radius: 0 0 10px 10px;
+  padding: 12px 10px;
+  background-color: #fff;
+  display: flex;
+  column-gap: 20px;
+  border: 1px solid rgb(185, 185, 185);
+  margin-top: -10px;
+  border-top: none;
+}
+.card .about .info {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(41, 41, 41);
+}
+
+.card .about .info i {
+  margin-right: 8px;
+}
+
+/* searchBar */
+.search {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.search label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search label i {
+  color: white;
+  font-size: 20px;
+}
+
+.search label button {
+  background-color: #e94560;
+  border-radius: 5px;
+  padding: 8px 15px;
+  outline: none;
+  border: none;
+  width: 80px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.search label button:hover {
+  cursor: pointer;
+  background-color: #ff7a90;
+}
+
+.search label input {
+  outline: none;
+  width: 100%;
+  padding: 4px;
+  border: none;
+  border-bottom: 2px solid #e94560;
+  font-size: 20px;
+}
+
+/* arrow top */
+.scrollTop {
+  position: relative;
+}
+
+.scrollTop button {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  padding: 8px 20px;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #293c70;
+  color: white;
+}
+.scrollTop button:hover {
+  cursor: pointer;
+  background-color: #3b559b;
+}
+/* end arrow top */
+/* about */
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1 {
+  border-bottom: 2px solid rgba(99, 99, 99, 0.3);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.container article p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.container article a {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #e94560;
+}
+
+.linkAPI {
+  font-size: 25px;
+  font-weight: 700;
+}
+.linkAPI a {
+  color: #e94560;
+}
+
+.linkAPI a:hover {
+  color: #ff7a90;
+}
+
+.pixa-img {
+  width: 800px;
+}
+
+/* breakpoint */
+
+@media screen and (max-width: 720px) {
+  .search {
+    width: 300px;
+    font-size: 18px;
+  }
+  .scrollTop button {
+    font-size: 18px;
+    padding: 8px 17px;
+  }
+  .pixa-img {
+    width: 40rem;
+    margin-left: -30px;
+  }
+}
