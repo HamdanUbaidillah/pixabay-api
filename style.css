@@ -86,7 +86,7 @@ label #btn {
 footer {
   position: absolute;
   top: 840px;
-  left: 20px;
+  left: 30px;
 }
 
 footer p {
@@ -288,5 +288,9 @@ article {
   .pixa-img {
     width: 40rem;
     margin-left: -30px;
+  }
+  footer {
+    top: 740px;
+    left: 30px;
   }
 }
